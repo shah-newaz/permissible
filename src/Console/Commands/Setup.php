@@ -56,7 +56,7 @@ class Setup extends Command
     {
         $files = new Filesystem;
 
-        $model_path = 'Models\User.php';
+        $model_path = 'Models/User.php';
         $modelFilePath = app_path($model_path);
 
         $modelFile = file($modelFilePath);
