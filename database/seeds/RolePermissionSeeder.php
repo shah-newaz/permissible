@@ -7,7 +7,8 @@ use Illuminate\Database\Seeder;
 use Shahnewaz\Permissible\Permission;
 use Shahnewaz\Permissible\Role;
 
-return new class extends Seeder {
+class RolePermissionSeeder extends Seeder
+{
     /**
      * Run the database seeds.
      *
@@ -72,4 +73,4 @@ return new class extends Seeder {
 
         $su->roles()->sync([1]);
     }
-};
+}
