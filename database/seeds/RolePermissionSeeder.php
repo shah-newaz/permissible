@@ -20,9 +20,9 @@ class RolePermissionSeeder extends Seeder
         Role::truncate();
 
         // Create major roles
-        $su = Role::firstOrcreate(['name' => 'Super User'], ['code' => 'su', 'weight' => 1]);
-        $admin = Role::firstOrcreate(['name' => 'Admin'], ['code' => 'admin', 'weight' => 2]);
-        $moderator = Role::firstOrcreate(['name' => 'Staff'], ['code' => 'staff', 'weight' => 3]);
+        Role::firstOrcreate(['name' => 'Super User'], ['code' => 'su', 'weight' => 1]);
+        Role::firstOrcreate(['name' => 'Admin'], ['code' => 'admin', 'weight' => 2]);
+        Role::firstOrcreate(['name' => 'Staff'], ['code' => 'staff', 'weight' => 3]);
 
         // Create permissions
         Permission::truncate();
